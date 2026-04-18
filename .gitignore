@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+
+# Claude
+.claude/
+
+# Backup files
+index_backup.html
+*.bak
+
+# Node (if ever added)
+node_modules/
