@@ -82,6 +82,8 @@ a { color: inherit; text-decoration: none; }
 
 /* ------------ Utility ------------ */
 .container { max-width: 1680px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); }
+/* MK brand accent — bleu roi de Tanger */
+.mk-blue { color: var(--accent); font-style: normal; }
 .eyebrow {
   font-family: var(--f-mono);
   font-size: 11px;

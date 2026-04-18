@@ -80,7 +80,7 @@ function Intro({ onDone }) {
       <div className="intro__name">
         <div className="intro__name-eyebrow">Architecte D.P.L.G. — Tanger, Maroc</div>
         <h1 className="intro__name-title">
-          <span className="intro__word">MK</span>
+          <span className="intro__word mk-blue">MK</span>
           <span className="intro__word intro__word--it">Architects</span>
         </h1>
         <div className="intro__name-sub">Cabinet d&rsquo;architecture · Fondé en 1998</div>

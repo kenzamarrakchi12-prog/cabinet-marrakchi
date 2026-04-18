@@ -4,6 +4,17 @@ const { useState, useEffect, useRef, useMemo } = React;
 
 /* ---------- Helpers ---------- */
 
+/* Colorise "MK" en bleu roi partout où c'est du texte rendu */
+function renderMK(text) {
+  if (!text || typeof text !== "string") return text;
+  const parts = text.split("MK");
+  if (parts.length === 1) return text;
+  return parts.reduce((acc, part, i) => {
+    if (i === 0) return [part];
+    return [...acc, <span key={i} className="mk-blue">MK</span>, part];
+  }, []);
+}
+
 function useReveal() {
   const ref = useRef(null);
   useEffect(() => {
@@ -39,7 +50,7 @@ function Nav({ t, lang, setLang, theme, onRdv }) {
     <nav className={`nav${scrolled ? " scrolled" : ""}`}>
       <div className="nav__brand">
         <span className="dot"></span>
-        <span>MK Architects</span>
+        <span><span className="mk-blue">MK</span> Architects</span>
         <span className="nav__brand-city" style={{ opacity: 0.55 }}>— Tanger</span>
       </div>
       <div className="nav__links">
@@ -108,7 +119,7 @@ function HeroCinematic({ t, images, heroStyle }) {
     return (
       <section className="hero hero--type">
         <div className="hero__big">
-          <span>MK Architects</span>
+          <span><span className="mk-blue">MK</span> Architects</span>
         </div>
         <div className="hero__content">
           <div className="hero__meta">
@@ -220,7 +231,7 @@ function Manifesto({ t }) {
           <p className="reveal">{t.manifesto.p1}</p>
           <p className="reveal">{t.manifesto.p2}</p>
           <p className="reveal">{t.manifesto.p3}</p>
-          <div className="manifesto__sig reveal">{t.manifesto.sig}</div>
+          <div className="manifesto__sig reveal">{renderMK(t.manifesto.sig)}</div>
         </div>
       </div>
     </section>
@@ -372,7 +383,7 @@ function Footer({ t }) {
       <div className="container">
         <div className="footer__grid">
           <div className="footer__brand">
-            <h3>{t.footer.title}</h3>
+            <h3>{renderMK(t.footer.title)}</h3>
             <p>{t.footer.desc}</p>
           </div>
           <div className="footer__col">
@@ -389,7 +400,7 @@ function Footer({ t }) {
           </div>
         </div>
         <div className="footer__bottom">
-          <span>{t.footer.copyright}</span>
+          <span>{renderMK(t.footer.copyright)}</span>
           <span>{t.footer.credit}</span>
         </div>
       </div>
