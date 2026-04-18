@@ -201,12 +201,17 @@ function MarketSection({ t }) {
   const tm = t.market;
   return (
     <section className="market container" ref={ref} id="investir" data-screen-label="Marché immobilier tangerois">
-      <div className="strip__head">
-        <div className="eyebrow reveal">{tm.eyebrow}</div>
-        <h2 className="reveal">
-          {tm.title_1} <i className="it">{tm.title_2}</i>
-        </h2>
-        <p className="market__intro reveal">{tm.desc}</p>
+      <div className="market__head">
+        <div className="market__head-left">
+          <div className="eyebrow reveal">{tm.eyebrow}</div>
+          <h2 className="market__title reveal">
+            {tm.title_1}<br/><i className="it">{tm.title_2}</i>
+          </h2>
+        </div>
+        <div className="market__head-right">
+          <p className="market__intro reveal">{tm.desc}</p>
+          <div className="market__head-rule reveal"></div>
+        </div>
       </div>
 
       {/* Key stats pills */}

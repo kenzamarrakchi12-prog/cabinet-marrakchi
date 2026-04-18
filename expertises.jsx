@@ -11,12 +11,17 @@ function ExpertisesSection({ t }) {
     <section className="expertises" id="expertises" ref={ref}
       data-screen-label="Nos Expertises">
       <div className="container">
-        <div className="strip__head">
-          <div className="eyebrow reveal">{te.eyebrow}</div>
-          <h2 className="reveal">
-            {te.title_1} <i className="it">{te.title_2}</i>
-          </h2>
-          <p className="expertises__intro reveal">{te.intro}</p>
+        <div className="expertises__head">
+          <div className="expertises__head-left">
+            <div className="eyebrow reveal">{te.eyebrow}</div>
+            <h2 className="expertises__title reveal">
+              {te.title_1}<br/><i className="it">{te.title_2}</i>
+            </h2>
+          </div>
+          <div className="expertises__head-right">
+            <p className="expertises__intro reveal">{te.intro}</p>
+            <div className="expertises__head-rule reveal"></div>
+          </div>
         </div>
 
         <div className="expertises__grid">

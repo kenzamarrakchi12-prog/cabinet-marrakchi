@@ -1465,16 +1465,61 @@ a { color: inherit; text-decoration: none; }
    EXPERTISES SECTION
    ================================================================ */
 .expertises {
-  padding: clamp(80px, 12vh, 160px) 0;
+  padding-top: clamp(80px, 12vh, 160px);
+  padding-bottom: clamp(80px, 12vh, 160px);
   border-top: 1px solid var(--line);
+}
+
+/* ── Expertises header: 2-column editorial ── */
+.expertises__head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 100px);
+  align-items: end;
+  padding-bottom: clamp(48px, 7vh, 88px);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: clamp(40px, 6vh, 72px);
+}
+.expertises__head-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.expertises__title {
+  font-family: var(--f-display);
+  font-weight: 300;
+  font-size: clamp(44px, 6.5vw, 110px);
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  color: var(--ink);
+}
+.expertises__title .it { font-style: italic; font-weight: 300; }
+.expertises__head-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 28px;
+  padding-bottom: 6px;
 }
 .expertises__intro {
   font-size: 15px;
   line-height: 1.8;
   color: var(--ink-dim);
-  max-width: 640px;
-  margin-top: 16px;
+  max-width: 520px;
 }
+.expertises__head-rule {
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+}
+@media (max-width: 800px) {
+  .expertises__head {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+}
+
 .expertises__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1604,12 +1649,55 @@ a { color: inherit; text-decoration: none; }
   padding-bottom: clamp(80px, 12vh, 160px);
   border-top: 1px solid var(--line);
 }
+
+/* ── Market header: 2-column editorial ── */
+.market__head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 100px);
+  align-items: end;
+  padding-bottom: clamp(40px, 6vh, 72px);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: clamp(40px, 5vh, 60px);
+}
+.market__head-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.market__title {
+  font-family: var(--f-display);
+  font-weight: 300;
+  font-size: clamp(44px, 6.5vw, 110px);
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  color: var(--ink);
+}
+.market__title .it { font-style: italic; font-weight: 300; }
+.market__head-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 28px;
+  padding-bottom: 6px;
+}
+.market__head-rule {
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+}
+@media (max-width: 800px) {
+  .market__head {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+}
 .market__intro {
   font-size: 15px;
   line-height: 1.8;
   color: var(--ink-dim);
-  max-width: 620px;
-  margin-top: 16px;
+  max-width: 520px;
 }
 .market__pills {
   display: grid;
