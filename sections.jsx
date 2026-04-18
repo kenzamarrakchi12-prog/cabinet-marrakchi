@@ -39,7 +39,7 @@ function Nav({ t, lang, setLang, theme, onRdv }) {
     <nav className={`nav${scrolled ? " scrolled" : ""}`}>
       <div className="nav__brand">
         <span className="dot"></span>
-        <span>Cabinet Marrakchi</span>
+        <span>MK Architects</span>
         <span className="nav__brand-city" style={{ opacity: 0.55 }}>— Tanger</span>
       </div>
       <div className="nav__links">
@@ -108,7 +108,7 @@ function HeroCinematic({ t, images, heroStyle }) {
     return (
       <section className="hero hero--type">
         <div className="hero__big">
-          <span>Marrakchi</span>
+          <span>MK Architects</span>
         </div>
         <div className="hero__content">
           <div className="hero__meta">

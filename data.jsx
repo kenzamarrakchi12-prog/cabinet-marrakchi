@@ -140,7 +140,7 @@ window.__I18N__ = {
       mre: "MRE", about: "Agence", contact: "Contact", rdv: "Prendre RDV"
     },
     hero: {
-      eyebrow: "Cabinet d'architecture · D.P.L.G. · Tanger, Maroc · Depuis 1998",
+      eyebrow: "MK Architects · D.P.L.G. · Tanger, Maroc · Depuis 1998",
       title_l1: "Bâtir le Nord",
       title_l2: "depuis",
       title_l3: "1998.",
@@ -171,7 +171,7 @@ window.__I18N__ = {
         React.createElement("i", {className:"it"}, "avance"),
         ", documenté et suivi en temps réel par une équipe que les familles tangeroise font confiance depuis une génération."
       ),
-      sig: "— Cabinet Marrakchi, Architecte D.P.L.G. · Tanger.",
+      sig: "— MK Architects, Architecte D.P.L.G. · Tanger.",
     },
     stats: [
       { n: 30,    label: "Ans d'exercice",          suffix: "" },
@@ -361,12 +361,12 @@ window.__I18N__ = {
       none: "—",
     },
     footer: {
-      title: "Cabinet Marrakchi — Tanger",
+      title: "MK Architects — Tanger",
       desc: "Architecte D.P.L.G. · Membre du Conseil de l'Ordre National des Architectes du Maroc · Fondé en 1998.",
       col1: "Agence",    col1_links: ["Manifeste", "Philosophie", "Timeline", "Contact"],
       col2: "Expertises",col2_links: ["Villas & résidences", "Ensembles résidentiels", "Bâtiments industriels", "Équipements publics", "Architecture d'intérieur"],
       col3: "Suivre",    col3_links: ["Instagram", "LinkedIn", "Pinterest", "Behance"],
-      copyright: "© 2026 Cabinet Marrakchi. Tous droits réservés.",
+      copyright: "© 2026 MK Architects. Tous droits réservés.",
       credit: "Fondé en 1998 · Tanger, Maroc",
     },
   },
@@ -375,7 +375,7 @@ window.__I18N__ = {
   ar: {
     nav: { work: "المشاريع", expertises: "خدماتنا", investir: "الاستثمار بطنجة", mre: "المغاربة في الخارج", about: "المكتب", contact: "اتصال", rdv: "حجز موعد" },
     hero: {
-      eyebrow: "مكتب مراكشي للهندسة المعمارية · دبلوم دولة · طنجة",
+      eyebrow: "MK Architects · دبلوم دولة · طنجة",
       title_l1: "نبني الشمال",
       title_l2: "منذ",
       title_l3: "1998.",
@@ -403,7 +403,7 @@ window.__I18N__ = {
         React.createElement("i", {className:"it"}, "يتقدم"),
         "، موثقاً ومتابعاً في الوقت الحقيقي من فريق يثق به أبناء طنجة منذ جيل."
       ),
-      sig: "— مكتب مراكشي، مهندس معماري · طنجة.",
+      sig: "— MK Architects، مهندس معماري · طنجة.",
     },
     stats: [
       { n: 30,    label: "سنة من الممارسة",           suffix: "" },
@@ -567,12 +567,12 @@ window.__I18N__ = {
       success_mark: "✓", none: "—",
     },
     footer: {
-      title: "مكتب مراكشي — طنجة",
+      title: "MK Architects — طنجة",
       desc: "مهندس معماري · عضو الهيئة الوطنية للمهندسين المعماريين بالمغرب · تأسس 1998.",
       col1: "المكتب",    col1_links: ["البيان", "الفلسفة", "التاريخ", "التواصل"],
       col2: "الخدمات",   col2_links: ["الفلل والمساكن", "المجمعات السكنية", "المباني الصناعية", "المرافق العامة", "التصميم الداخلي"],
       col3: "متابعة",    col3_links: ["إنستغرام", "لينكدإن", "بنترست", "بيهانس"],
-      copyright: "© 2026 مكتب مراكشي. جميع الحقوق محفوظة.",
+      copyright: "© 2026 MK Architects. جميع الحقوق محفوظة.",
       credit: "تأسس عام 1998 · طنجة، المغرب",
     },
   },
@@ -581,7 +581,7 @@ window.__I18N__ = {
   dr: {
     nav: { work: "Lkhdma", expertises: "Khadamat", investir: "Lstithmar f Tanja", mre: "MRE", about: "Lmakatib", contact: "Contact", rdv: "Akhd Mawed" },
     hero: {
-      eyebrow: "Cabinet Marrakchi — Mohandes M3mari — Tanja — Mn 1998",
+      eyebrow: "MK Architects — Mohandes M3mari — Tanja — Mn 1998",
       title_l1: "Kanbniw Shamal",
       title_l2: "mn",
       title_l3: "1998.",
@@ -609,7 +609,7 @@ window.__I18N__ = {
         React.createElement("i", {className:"it"}, "kaytsir"),
         ", muwaththa9 w muttaba3 f wa9t ha9i9i mn fri9 tatiman bih 3a'ilat Tanja mn jilin."
       ),
-      sig: "— Cabinet Marrakchi, Mohandes M3mari · Tanja.",
+      sig: "— MK Architects, Mohandes M3mari · Tanja.",
     },
     stats: [
       { n: 30,    label: "3am dyal lkhdma",   suffix: "" },
@@ -766,12 +766,12 @@ window.__I18N__ = {
       success_mark: "✓", none: "—",
     },
     footer: {
-      title: "Cabinet Marrakchi — Tanja",
+      title: "MK Architects — Tanja",
       desc: "Mohandes M3mari · Hay2a Watania Dyal Lmuhandissin, lMaghrib · Tasis 1998.",
       col1: "Lmakatib",  col1_links: ["Lfikra", "Falsafa", "Tarikh", "Contact"],
       col2: "Khadamat",  col2_links: ["Villa w Dar", "Mujam3at", "Mbani Sina3iya", "Mrafiq 3amma", "Dakhli"],
       col3: "Tab3",      col3_links: ["Instagram", "LinkedIn", "Pinterest", "Behance"],
-      copyright: "© 2026 Cabinet Marrakchi. Jami3 l7u9u9 mahfuda.",
+      copyright: "© 2026 MK Architects. Jami3 l7u9u9 mahfuda.",
       credit: "Tasis 1998 · Tanja, lMaghrib",
     },
   },
