@@ -99,7 +99,13 @@ function App() {
     <>
       <div id="cursor-dot" className="cursor-dot"></div>
       {!introDone && <Intro onDone={handleIntroDone} />}
-      <Nav t={t} lang={lang} setLang={(l) => { setLang(l); setSettings({ ...settings, lang: l }); }} theme={settings.theme} onRdv={onRdv} />
+      <Nav
+        t={t} lang={lang}
+        setLang={(l) => { setLang(l); setSettings({ ...settings, lang: l }); }}
+        theme={settings.theme}
+        onThemeToggle={() => setSettings({ ...settings, theme: settings.theme === "ink" ? "paper" : "ink" })}
+        onRdv={onRdv}
+      />
 
       <HeroCinematic t={t} images={heroImages} heroStyle={settings.heroStyle} />
 

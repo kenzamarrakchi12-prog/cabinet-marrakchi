@@ -38,7 +38,7 @@ function useReveal() {
 }
 
 /* ---------- Navigation ---------- */
-function Nav({ t, lang, setLang, theme, onRdv }) {
+function Nav({ t, lang, setLang, theme, onThemeToggle, onRdv }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -87,6 +87,16 @@ function Nav({ t, lang, setLang, theme, onRdv }) {
             <span className="sep">/</span>
             <button className={lang === "dr" ? "active" : ""} onClick={() => setLang("dr")}>Darija</button>
           </div>
+          {/* Theme toggle */}
+          <button
+            className={`nav__theme-toggle${theme === "paper" ? " is-light" : ""}`}
+            onClick={onThemeToggle}
+            aria-label={theme === "ink" ? "Passer en mode jour" : "Passer en mode nuit"}
+          >
+            <span className="nav__theme-icon nav__theme-icon--moon">☾</span>
+            <span className="nav__theme-track"><span className="nav__theme-thumb"></span></span>
+            <span className="nav__theme-icon nav__theme-icon--sun">☀</span>
+          </button>
           <button className="nav__cta nav__cta--desk" onClick={onRdv}>{t.nav.rdv} ↗</button>
           {/* Hamburger — mobile only */}
           <button className="nav__hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
@@ -105,12 +115,23 @@ function Nav({ t, lang, setLang, theme, onRdv }) {
           <a href="#agence"    onClick={close}>{t.nav.about}</a>
         </div>
         <div className="nav__mobile-foot">
-          <div className="nav__lang">
-            <button className={lang === "fr" ? "active" : ""} onClick={() => setLang("fr")}>FR</button>
-            <span className="sep">/</span>
-            <button className={lang === "ar" ? "active" : ""} onClick={() => setLang("ar")}>عربية</button>
-            <span className="sep">/</span>
-            <button className={lang === "dr" ? "active" : ""} onClick={() => setLang("dr")}>Darija</button>
+          <div className="nav__mobile-foot-left">
+            <div className="nav__lang">
+              <button className={lang === "fr" ? "active" : ""} onClick={() => setLang("fr")}>FR</button>
+              <span className="sep">/</span>
+              <button className={lang === "ar" ? "active" : ""} onClick={() => setLang("ar")}>عربية</button>
+              <span className="sep">/</span>
+              <button className={lang === "dr" ? "active" : ""} onClick={() => setLang("dr")}>Darija</button>
+            </div>
+            <button
+              className={`nav__theme-toggle${theme === "paper" ? " is-light" : ""}`}
+              onClick={onThemeToggle}
+              aria-label={theme === "ink" ? "Mode jour" : "Mode nuit"}
+            >
+              <span className="nav__theme-icon nav__theme-icon--moon">☾</span>
+              <span className="nav__theme-track"><span className="nav__theme-thumb"></span></span>
+              <span className="nav__theme-icon nav__theme-icon--sun">☀</span>
+            </button>
           </div>
           <button className="nav__cta" onClick={() => { close(); onRdv(); }}>{t.nav.rdv} ↗</button>
         </div>
