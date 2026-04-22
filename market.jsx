@@ -102,9 +102,10 @@ function LineChart({ data }) {
             <circle cx={px(i)} cy={py(d.val)} r="4.5"
               fill="var(--bg)" stroke="var(--accent)" strokeWidth="2"
               style={{ opacity: animated ? 1 : 0, transition: `opacity 250ms ${200 + i * 130}ms` }}/>
-            {/* Last value label */}
+            {/* Last value label — ancré à droite du chart pour ne pas déborder */}
             {i === data.length - 1 && (
-              <text x={px(i) + 8} y={py(d.val) - 10}
+              <text x={W - pad.r} y={py(d.val) - 10}
+                textAnchor="end"
                 fontSize="11" fontFamily="var(--f-mono)" fontWeight="600" fill="var(--accent)"
                 style={{ opacity: animated ? 1 : 0, transition: "opacity 400ms 1400ms" }}>
                 {(d.val/1000).toFixed(1)}k MAD/m²
