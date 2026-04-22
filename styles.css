@@ -82,8 +82,15 @@ a { color: inherit; text-decoration: none; }
 
 /* ------------ Utility ------------ */
 .container { max-width: 1680px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); }
-/* MK brand accent — bleu roi de Tanger */
-.mk-blue { color: var(--accent); font-style: normal; }
+/* MK brand accent — bleu vif lisible sur fond sombre */
+.mk-blue {
+  color: #3B8AFF;
+  font-style: normal;
+}
+.hero__title .mk-blue {
+  color: #3B8AFF;
+  text-shadow: 0 0 48px rgba(59,138,255,0.35);
+}
 .eyebrow {
   font-family: var(--f-mono);
   font-size: 11px;
@@ -245,6 +252,7 @@ a { color: inherit; text-decoration: none; }
 }
 .hero__title .ln:nth-child(2) span { animation-delay: 100ms; }
 .hero__title .ln:nth-child(3) span { animation-delay: 200ms; }
+.hero__title .ln:nth-child(4) span { animation-delay: 300ms; }
 @keyframes rise { to { transform: translateY(0); } }
 
 .hero__sub {
@@ -358,7 +366,7 @@ a { color: inherit; text-decoration: none; }
 /* Hero style: editorial mosaic */
 .hero--editorial {
   display: grid;
-  grid-template-columns: 42vw 1fr;
+  grid-template-columns: 46vw 1fr;
   height: 100vh;
   min-height: 680px;
   overflow: hidden;
@@ -372,7 +380,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: clamp(110px,16vh,180px) clamp(36px,5vw,76px) clamp(48px,7vh,88px);
+  padding: clamp(110px,16vh,180px) clamp(32px,4vw,60px) clamp(48px,7vh,88px);
   position: relative;
   z-index: 2;
   border-right: 2px solid var(--line);
@@ -401,7 +409,7 @@ a { color: inherit; text-decoration: none; }
 }
 .hero--editorial .hero__title {
   color: var(--ink);
-  font-size: clamp(36px, 4.8vw, 80px);
+  font-size: clamp(28px, 3.4vw, 56px);
   max-width: none;
 }
 .hero--editorial .hero__sub {
