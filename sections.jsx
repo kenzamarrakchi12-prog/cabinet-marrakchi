@@ -138,6 +138,10 @@ function HeroCinematic({ t, images, heroStyle }) {
     <section className="hero hero--editorial">
       {/* ── Left: text panel ── */}
       <div className="hero__panel">
+        {/* Illustration Tanger en fond du panel */}
+        <div className="hero__panel-illus" aria-hidden="true">
+          <img src="photos/tanger-illustration.png" alt="" />
+        </div>
         <div className="hero__panel-inner">
           <div className="hero__ed-eyebrow">{t.hero.eyebrow}</div>
           <h1 className="hero__title">

@@ -257,10 +257,6 @@ function MRESection({ t }) {
   const tm = t.mre;
   return (
     <section className="mre-section" ref={ref} id="mre" data-screen-label="MRE — Marocains du Monde">
-      {/* Illustration Tanger */}
-      <div className="mre__illustration" aria-hidden="true">
-        <img src="photos/tanger-illustration.png" alt="" />
-      </div>
       {/* Big watermark background text */}
       <div className="mre__bg-word" aria-hidden="true">MRE</div>
 
