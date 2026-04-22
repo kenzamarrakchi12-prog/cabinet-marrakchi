@@ -61,8 +61,8 @@ function App() {
 
   const heroImages = [
     "photos/villa-contemporaine-piscine.jpg",
-    "photos/villa-nocturne.jpg",
-    "photos/villa-courbes.jpg",
+    "photos/immeuble-vegetal.jpg",
+    "photos/residence-bois-jaune.jpg",
     "photos/residence-piscine-villas.jpg",
     "photos/villa-15-nuit.jpg",
   ];
