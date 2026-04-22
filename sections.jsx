@@ -151,17 +151,8 @@ function HeroCinematic({ t, images, heroStyle }) {
             ))}
           </ul>
 
-          {/* ── Mini KPIs ── */}
-          <div className="hero__kpis">
-            {t.stats.slice(0, 3).map((s, i) => (
-              <div key={i} className="hero__kpi">
-                <div className="hero__kpi-n">
-                  {s.n.toLocaleString("fr-FR")}<span className="hero__kpi-suf">{s.suffix}</span>
-                </div>
-                <div className="hero__kpi-l">{s.label}</div>
-              </div>
-            ))}
-          </div>
+          {/* ── Tagline signature ── */}
+          <p className="hero__tagline">{t.hero.tagline}</p>
         </div>
         <div className="hero__panel-foot">
           <div className="hero__scroll-hint">{t.hero.scroll}</div>

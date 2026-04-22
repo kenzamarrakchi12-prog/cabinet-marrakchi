@@ -147,6 +147,7 @@ window.__I18N__ = {
       title_l4: "Tanger.",
       sub: "Architecture résidentielle, industrielle & tertiaire. 30 ans d'exercice. 340+ projets livrés.",
       scroll: "Découvrir",
+      tagline: "De la première esquisse à la remise des clés — un seul interlocuteur, zéro compromis.",
       counter: (i, n) => `${String(i).padStart(2,"0")} / ${String(n).padStart(2,"0")}`,
     },
     split: {
@@ -177,7 +178,7 @@ window.__I18N__ = {
     stats: [
       { n: 30,    label: "Ans d'exercice",          suffix: "" },
       { n: 340,   label: "Projets livrés",           suffix: "+" },
-      { n: 220000,label: "M² construits",            suffix: "+" },
+      { n: 100,   label: "Projets livrés clé en main", suffix: "%" },
       { n: 18,    label: "Typologies architecturales",suffix: "" },
     ],
     strip: {
@@ -383,6 +384,7 @@ window.__I18N__ = {
       title_l4: "طنجة.",
       sub: "هندسة معمارية سكنية وصناعية وتجارية. 30 سنة من الممارسة، 340+ مشروع.",
       scroll: "اكتشف",
+      tagline: "من أول رسم إلى تسليم المفاتيح — جهة واحدة، بلا مفاجآت.",
       counter: (i, n) => `${String(i).padStart(2,"0")} / ${String(n).padStart(2,"0")}`,
     },
     split: { num_archi: "القسم 01", num_int: "القسم 02", archi: "الهندسة المعمارية", interior: "التصميم الداخلي", arrow: "← عرض" },
@@ -410,7 +412,7 @@ window.__I18N__ = {
     stats: [
       { n: 30,    label: "سنة من الممارسة",           suffix: "" },
       { n: 340,   label: "مشروع منجز",                suffix: "+" },
-      { n: 220000,label: "متر مربع مبني",              suffix: "+" },
+      { n: 100,   label: "مشاريع تُسلَّم جاهزة تماماً",   suffix: "%" },
       { n: 18,    label: "تخصصاً معمارياً",            suffix: "" },
     ],
     strip: { title_1: "مشاريع", title_2: "حديثة", meta: "مختارات من إنجازات 2022 — 2024 عبر المملكة." },
@@ -590,6 +592,7 @@ window.__I18N__ = {
       title_l4: "Tanja.",
       sub: "Handasa skaniya, sina3iya w tijariya. 30 3am f lkhdma, 340+ mashrou3.",
       scroll: "Zed l taht",
+      tagline: "Men lewwel rasm hetta tslim lmfath — wahd lmaktab, walo mofaja2at.",
       counter: (i, n) => `${String(i).padStart(2,"0")} / ${String(n).padStart(2,"0")}`,
     },
     split: { num_archi: "Bab 01", num_int: "Bab 02", archi: "Handasa", interior: "Dakhli", arrow: "Chof →" },
@@ -617,7 +620,7 @@ window.__I18N__ = {
     stats: [
       { n: 30,    label: "3am dyal lkhdma",   suffix: "" },
       { n: 340,   label: "Mashrou3 mkmmul",   suffix: "+" },
-      { n: 220000,label: "Metr mrabba3 mbni", suffix: "+" },
+      { n: 100,   label: "Mashrou3at kaytslamu mkamlin", suffix: "%" },
       { n: 18,    label: "Takhassos m3mariya",suffix: "" },
     ],
     strip: { title_1: "Mashari3", title_2: "jdida", meta: "Ikhtiyar mn 2022 hetta 2024 f kamel lmamlaka." },
