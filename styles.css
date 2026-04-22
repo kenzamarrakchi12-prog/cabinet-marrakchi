@@ -1832,7 +1832,41 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2px;
-  margin: 52px 0 56px;
+  margin: 52px 0 48px;
+}
+
+/* Competitive insight block */
+.market__insight {
+  display: grid;
+  grid-template-columns: 3px 1fr;
+  gap: 0 28px;
+  align-items: start;
+  margin: 0 0 56px;
+  max-width: 860px;
+}
+.market__insight-bar {
+  width: 3px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  align-self: stretch;
+  border-radius: 2px;
+  opacity: 0.6;
+}
+.market__insight p {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(15px, 1.35vw, 19px);
+  line-height: 1.75;
+  color: var(--ink-dim);
+  letter-spacing: -0.01em;
+}
+.market__insight p strong {
+  color: var(--ink);
+  font-style: normal;
+  font-weight: 400;
+}
+@media (max-width: 600px) {
+  .market__insight { grid-template-columns: 2px 1fr; gap: 0 18px; }
 }
 @media (max-width: 860px) { .market__pills { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .market__pills { grid-template-columns: 1fr; } }

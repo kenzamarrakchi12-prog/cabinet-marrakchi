@@ -225,6 +225,14 @@ function MarketSection({ t }) {
         ))}
       </div>
 
+      {/* Competitive insight paragraph */}
+      {tm.desc2 && (
+        <div className="market__insight reveal">
+          <div className="market__insight-bar"></div>
+          <p>{tm.desc2}</p>
+        </div>
+      )}
+
       {/* Charts */}
       <div className="market__charts">
         <div className="market__chart-card reveal">
