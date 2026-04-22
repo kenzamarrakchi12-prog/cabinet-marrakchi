@@ -142,7 +142,8 @@ function HeroCinematic({ t, images, heroStyle }) {
           <div className="hero__ed-eyebrow">{t.hero.eyebrow}</div>
           <h1 className="hero__title">
             <span className="ln"><span>{t.hero.title_l1}</span></span>
-            <span className="ln"><span><i className="it">{t.hero.title_l2}</i> {t.hero.title_l3}</span></span>
+            <span className="ln"><span>{t.hero.title_l2}</span></span>
+            <span className="ln"><span>{t.hero.title_l3} <i className="it mk-blue">{t.hero.title_l4}</i></span></span>
           </h1>
           <div className="hero__sub">{t.hero.sub}</div>
         </div>
