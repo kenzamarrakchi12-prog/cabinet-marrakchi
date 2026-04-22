@@ -225,11 +225,25 @@ function MarketSection({ t }) {
         ))}
       </div>
 
-      {/* Competitive insight paragraph */}
-      {tm.desc2 && (
+      {/* Competitive insight — two-column editorial block */}
+      {tm.insight_bullets && (
         <div className="market__insight reveal">
-          <div className="market__insight-bar"></div>
-          <p>{tm.desc2}</p>
+          {/* Left: display title */}
+          <div className="market__insight-left">
+            <h3 className="market__insight-title">
+              {tm.insight_title}<br/>
+              <i className="it">{tm.insight_title2}</i>
+            </h3>
+          </div>
+          {/* Right: bullet rows */}
+          <div className="market__insight-right">
+            {tm.insight_bullets.map((b, i) => (
+              <div key={i} className="market__insight-row">
+                <div className="market__insight-stat">{b.stat}</div>
+                <div className="market__insight-text">{b.text}</div>
+              </div>
+            ))}
+          </div>
         </div>
       )}
 

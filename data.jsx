@@ -211,7 +211,14 @@ window.__I18N__ = {
       title_1: "Investir à Tanger :",
       title_2: "les chiffres parlent.",
       desc: "Tanger est la ville la plus dynamique du Maghreb. Premier port d'Afrique et de Méditerranée, hub industriel mondial, croissance démographique soutenue — les fondamentaux immobiliers sont exceptionnels et la tendance s'accélère.",
-      desc2: "Dans ce contexte de forte valorisation, les rendements locatifs à Tanger s'établissent entre 5 % et 9 % nets annuels — parmi les meilleurs de la Méditerranée. Mais l'essor du marché a un revers : la concurrence est devenue sélective. Aujourd'hui, la différence entre un bien qui se commercialise en quelques semaines et un bien qui stagne ne tient plus seulement à l'emplacement — elle tient à la qualité architecturale et à la force du projet d'intérieur. Un programme bien conçu génère une prime de loyer mesurable, une meilleure plus-value à la revente et une résilience aux cycles que les biens génériques n'ont tout simplement pas. Investir intelligemment à Tanger en 2026, c'est d'abord investir dans l'architecture.",
+      insight_title: "Un marché rentable,",
+      insight_title2: "un marché exigeant.",
+      insight_bullets: [
+        { stat: "5–9 %",      text: "de rendement locatif net annuel selon les emplacements — parmi les meilleurs de toute la Méditerranée, très au-dessus des standards européens." },
+        { stat: "Sélectif",   text: "Face à une offre croissante, les biens standards stagnent. Les projets architecturalement distinctifs se louent en quelques semaines et à des tarifs supérieurs." },
+        { stat: "Prime",      text: "La qualité du projet génère une valeur mesurable : loyers 20 à 35 % plus élevés, meilleure plus-value à la revente, résistance aux cycles du marché." },
+        { stat: "Différence", text: "L'architecture d'intérieur n'est plus un luxe — c'est un levier de rentabilité direct. Un aménagement pensé transforme un bien ordinaire en actif performant." },
+      ],
       highlights: [
         { n: "+43 %", label: "Hausse des prix résidentiels — Tanger 2021–2024" },
         { n: "115 Mrd",label: "MAD transférés par les MRE vers le Maroc en 2023" },
@@ -430,7 +437,14 @@ window.__I18N__ = {
       title_1: "الاستثمار في طنجة :",
       title_2: "الأرقام تتكلم.",
       desc: "طنجة هي المدينة الأكثر ديناميكية في المغرب العربي. أول ميناء في أفريقيا والبحر الأبيض المتوسط، قطب صناعي عالمي، نمو ديموغرافي متواصل — الأساسيات العقارية استثنائية والاتجاه يتسارع.",
-      desc2: "في ظل هذا التقدير المتواصل، تتراوح مردودية الإيجار في طنجة بين 5 % و9 % صافية سنوياً — من بين الأعلى على المستوى المتوسطي. غير أن هذا الازدهار له وجه آخر: السوق بات تنافسياً ومنتقياً. الفارق اليوم بين عقار يُسوَّق في أسابيع وعقار يبقى شاغراً لا يكمن فقط في الموقع — بل في الجودة المعمارية وتوقيع التصميم الداخلي. المشروع المصمم بإتقان يحقق قيمة إيجارية مرتفعة، وفائض قيمة عند البيع، ومقاومة لتقلبات السوق لا تملكها العقارات العادية. الاستثمار الذكي في طنجة 2026 هو استثمار في العمارة.",
+      insight_title: "سوق مربح،",
+      insight_title2: "سوق انتقائي.",
+      insight_bullets: [
+        { stat: "5–9 %",      text: "مردودية إيجارية صافية سنوياً حسب الموقع — من بين الأعلى في حوض البحر الأبيض المتوسط، متجاوزةً المعايير الأوروبية." },
+        { stat: "انتقائي",    text: "في مواجهة العرض المتزايد، تركد العقارات العادية. أما المشاريع المتميزة معمارياً فتُؤجَّر في أسابيع وبأسعار أعلى." },
+        { stat: "علاوة",      text: "جودة المشروع تولّد قيمة قابلة للقياس: إيجارات أعلى بـ20 إلى 35%، وفائض قيمة أفضل عند البيع، ومقاومة لتقلبات السوق." },
+        { stat: "الفارق",     text: "التصميم الداخلي لم يعد رفاهية — بل أصبح رافعة مباشرة للمردودية. تهيئة مدروسة تحوّل عقاراً عادياً إلى أصل مالي متميز." },
+      ],
       highlights: [
         { n: "+43 %", label: "ارتفاع أسعار السكن — طنجة 2021–2024" },
         { n: "115 مليار",label: "درهم حوّلها المغاربة في الخارج عام 2023" },
@@ -639,7 +653,14 @@ window.__I18N__ = {
       title_1: "Lqitmar f Tanja :",
       title_2: "lara9am kayhdru.",
       desc: "Tanja hiya lmadina dial dinamisme f lMaghrib lArabi. Awwal mina f Ifriqiya wl Mutawasit, 9utb sina3i 3alami, numu dimugrafi musta9arr — l'usus l3aqariya mmumayyaza w la-ittijah yatas3ar.",
-      desc2: "F had lmuhi9 dyal t9dir murtafi3, lmerdudiya dial lkira f Tanja kaydir bin 5 % w 9 % safi f l3am — mn lakhyar f lbhar lAbyad lMutawassit. Walakin had lbum 3ndu wajh akhor: suq bda tanafusi w selectif. Lyum, lfer9 bin 3qar kaytsarraf f usabi3 w 3qar kay9a f lhwa machi ghir f lmawdi3 — bel fi juda lhandasiya w taw9i3 dakhiliya. Mashrou3 mezyan kaysawwab kaydir 9imat ija3 mrifa3a, plus-value 3and lbi3, w mu9awama ldaw-9arat ma 3andhash l3qarat l3adiya. Lqitmar dzaki f Tanja 2026 huwa lqitmar f lhandasa.",
+      insight_title: "Suq mrbah,",
+      insight_title2: "suq selectif.",
+      insight_bullets: [
+        { stat: "5–9 %",    text: "merdudiya dial lkira safi f l3am — mn lakhyar f lbhar lAbyad lMutawassit, fo9 lma3ayir dial Europa." },
+        { stat: "Selectif", text: "F wajh l3ard lmtazayid, l3qarat l3adiya kay9u f lhwa. Lmashari3 l mutamayyiza handasiyan kaytsarrfu f usabi3 w b t9der kbar." },
+        { stat: "Prima",    text: "Juda lmashrou3 kaydir 9ima malhuda: kira20-35% murtafi3a, plus-value mezyana 3and lbi3, w mu9awama dyal ldaw-9arat." },
+        { stat: "Lfer9",    text: "Lhadssit dakhiliya mashi ro9a — hiya rafi3a mubashira dyal lmerdudiya. Thjiz mfakkar kaybadul 3qar 3adi l actif mtamayyiz." },
+      ],
       highlights: [
         { n: "+43 %", label: "Irrtifa3 l'atman l'aqariya — Tanja 2021–2024" },
         { n: "115 Mrd",label: "Dirham hawwlat lMRE l lMaghrib f 2023" },
