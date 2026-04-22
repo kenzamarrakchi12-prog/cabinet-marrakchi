@@ -243,7 +243,10 @@ a { color: inherit; text-decoration: none; }
 }
 .hero__title .it { font-style: italic; font-weight: 300; }
 .hero__title .ln {
-  display: block; overflow: hidden;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.18em;
+  margin-bottom: -0.18em;
 }
 .hero__title .ln span {
   display: inline-block;
