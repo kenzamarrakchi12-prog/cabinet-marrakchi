@@ -145,7 +145,11 @@ function HeroCinematic({ t, images, heroStyle }) {
             <span className="ln"><span>{t.hero.title_l2}</span></span>
             <span className="ln"><span>{t.hero.title_l3} <i className="it mk-blue">{t.hero.title_l4}</i></span></span>
           </h1>
-          <div className="hero__sub">{t.hero.sub}</div>
+          <ul className="hero__sub">
+            {t.hero.sub.split(". ").filter(Boolean).map((item, i) => (
+              <li key={i}>{item.replace(/\.$/, "")}</li>
+            ))}
+          </ul>
         </div>
         <div className="hero__panel-foot">
           <div className="hero__scroll-hint">{t.hero.scroll}</div>
