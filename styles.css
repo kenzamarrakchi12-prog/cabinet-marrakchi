@@ -11,9 +11,9 @@
   --ink-mute: #6B6A63;
   --line: rgba(245, 243, 238, 0.12);
   --line-strong: rgba(245, 243, 238, 0.28);
-  --accent: #0047AB; /* bleu roi de Tanger */
-  --accent-2: #1A5FCC;
-  --accent-dim: rgba(0,71,171,0.14);
+  --accent: #3B8AFF; /* bleu vif MK Architects */
+  --accent-2: #6BA8FF;
+  --accent-dim: rgba(59,138,255,0.14);
 
   /* Type */
   --f-display: "Canela Deck", "Fraunces", "Cormorant Garamond", "Times New Roman", serif;
@@ -49,7 +49,7 @@
 }
 
 /* Palette variants (tweakable) */
-[data-palette="ink"]    { --accent: #0047AB; --accent-2: #1A5FCC; --accent-dim: rgba(0,71,171,0.14); }
+[data-palette="ink"]    { --accent: #3B8AFF; --accent-2: #6BA8FF; --accent-dim: rgba(59,138,255,0.14); }
 [data-palette="ochre"]  { --accent: #D97706; --accent-2: #92400E; --accent-dim: rgba(217,119,6,0.14); }
 [data-palette="olive"]  { --accent: #849170; --accent-2: #505A42; --accent-dim: rgba(132,145,112,0.14); }
 [data-palette="cobalt"] { --accent: #3E5C96; --accent-2: #1E3A68; --accent-dim: rgba(62,92,150,0.14); }
@@ -82,13 +82,13 @@ a { color: inherit; text-decoration: none; }
 
 /* ------------ Utility ------------ */
 .container { max-width: 1680px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); }
-/* MK brand accent — bleu vif lisible sur fond sombre */
+/* MK brand accent */
 .mk-blue {
-  color: #3B8AFF;
+  color: var(--accent);
   font-style: normal;
 }
 .hero__title .mk-blue {
-  color: #3B8AFF;
+  color: var(--accent);
   text-shadow: 0 0 48px rgba(59,138,255,0.35);
 }
 .eyebrow {
@@ -1558,11 +1558,11 @@ a { color: inherit; text-decoration: none; }
 }
 .exp-card--highlight {
   background: color-mix(in srgb, var(--accent) 6%, var(--bg-elev));
-  border-color: rgba(0,71,171,0.28);
+  border-color: rgba(59,138,255,0.28);
   border-top-color: var(--accent);
 }
 [data-theme="paper"] .exp-card--highlight {
-  background: rgba(0,71,171,0.05);
+  background: rgba(59,138,255,0.05);
 }
 .exp-card__num {
   font-family: var(--f-mono);
