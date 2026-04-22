@@ -40,37 +40,82 @@ function useReveal() {
 /* ---------- Navigation ---------- */
 function Nav({ t, lang, setLang, theme, onRdv }) {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", handler, { passive: true });
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
+  /* Ferme le menu si on scrolle */
+  useEffect(() => {
+    if (!menuOpen) return;
+    const close = () => setMenuOpen(false);
+    window.addEventListener("scroll", close, { once: true, passive: true });
+    return () => window.removeEventListener("scroll", close);
+  }, [menuOpen]);
+
+  /* Bloque le scroll quand le menu est ouvert */
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
+
+  const close = () => setMenuOpen(false);
+
   return (
-    <nav className={`nav${scrolled ? " scrolled" : ""}`}>
-      <div className="nav__brand">
-        <span className="dot"></span>
-        <span><span className="mk-blue">MK</span> Architects</span>
-        <span className="nav__brand-city" style={{ opacity: 0.55 }}>— Tanger</span>
-      </div>
-      <div className="nav__links">
-        <a href="#projets">{t.nav.work}</a>
-        <a href="#expertises">{t.nav.expertises}</a>
-        <a href="#investir">{t.nav.investir}</a>
-        <a href="#mre">{t.nav.mre}</a>
-        <a href="#agence">{t.nav.about}</a>
-      </div>
-      <div className="nav__right">
-        <div className="nav__lang">
-          <button className={lang === "fr" ? "active" : ""} onClick={() => setLang("fr")}>FR</button>
-          <span className="sep">/</span>
-          <button className={lang === "ar" ? "active" : ""} onClick={() => setLang("ar")}>عربية</button>
-          <span className="sep">/</span>
-          <button className={lang === "dr" ? "active" : ""} onClick={() => setLang("dr")}>Darija</button>
+    <>
+      <nav className={`nav${scrolled ? " scrolled" : ""}${menuOpen ? " menu-open" : ""}`}>
+        <div className="nav__brand">
+          <span className="dot"></span>
+          <span><span className="mk-blue">MK</span> Architects</span>
+          <span className="nav__brand-city" style={{ opacity: 0.55 }}>— Tanger</span>
         </div>
-        <button className="nav__cta" onClick={onRdv}>{t.nav.rdv} ↗</button>
+        <div className="nav__links">
+          <a href="#projets">{t.nav.work}</a>
+          <a href="#expertises">{t.nav.expertises}</a>
+          <a href="#investir">{t.nav.investir}</a>
+          <a href="#mre">{t.nav.mre}</a>
+          <a href="#agence">{t.nav.about}</a>
+        </div>
+        <div className="nav__right">
+          <div className="nav__lang">
+            <button className={lang === "fr" ? "active" : ""} onClick={() => setLang("fr")}>FR</button>
+            <span className="sep">/</span>
+            <button className={lang === "ar" ? "active" : ""} onClick={() => setLang("ar")}>عربية</button>
+            <span className="sep">/</span>
+            <button className={lang === "dr" ? "active" : ""} onClick={() => setLang("dr")}>Darija</button>
+          </div>
+          <button className="nav__cta nav__cta--desk" onClick={onRdv}>{t.nav.rdv} ↗</button>
+          {/* Hamburger — mobile only */}
+          <button className="nav__hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+
+      {/* ── Menu mobile overlay ── */}
+      <div className={`nav__mobile${menuOpen ? " is-open" : ""}`} aria-hidden={!menuOpen}>
+        <div className="nav__mobile-links">
+          <a href="#projets"   onClick={close}>{t.nav.work}</a>
+          <a href="#expertises" onClick={close}>{t.nav.expertises}</a>
+          <a href="#investir"  onClick={close}>{t.nav.investir}</a>
+          <a href="#mre"       onClick={close}>{t.nav.mre}</a>
+          <a href="#agence"    onClick={close}>{t.nav.about}</a>
+        </div>
+        <div className="nav__mobile-foot">
+          <div className="nav__lang">
+            <button className={lang === "fr" ? "active" : ""} onClick={() => setLang("fr")}>FR</button>
+            <span className="sep">/</span>
+            <button className={lang === "ar" ? "active" : ""} onClick={() => setLang("ar")}>عربية</button>
+            <span className="sep">/</span>
+            <button className={lang === "dr" ? "active" : ""} onClick={() => setLang("dr")}>Darija</button>
+          </div>
+          <button className="nav__cta" onClick={() => { close(); onRdv(); }}>{t.nav.rdv} ↗</button>
+        </div>
       </div>
-    </nav>
+    </>
   );
 }
 
