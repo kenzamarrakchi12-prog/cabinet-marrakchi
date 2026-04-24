@@ -83,6 +83,8 @@ function Nav({ t, lang, setLang, theme, onThemeToggle, onRdv }) {
           <div className="nav__lang">
             <button className={lang === "fr" ? "active" : ""} onClick={() => setLang("fr")}>FR</button>
             <span className="sep">/</span>
+            <button className={lang === "nl" ? "active" : ""} onClick={() => setLang("nl")}>NL</button>
+            <span className="sep">/</span>
             <button className={lang === "ar" ? "active" : ""} onClick={() => setLang("ar")}>عربية</button>
             <span className="sep">/</span>
             <button className={lang === "dr" ? "active" : ""} onClick={() => setLang("dr")}>Darija</button>
@@ -115,16 +117,20 @@ function Nav({ t, lang, setLang, theme, onThemeToggle, onRdv }) {
           <a href="#agence"    onClick={close}>{t.nav.about}</a>
         </div>
         <div className="nav__mobile-foot">
-          <div className="nav__mobile-foot-left">
-            <div className="nav__lang">
+          {/* Langue — bien visible */}
+          <div className="nav__mobile-lang-block">
+            <div className="nav__mobile-lang-label">Langue</div>
+            <div className="nav__mobile-lang-btns">
               <button className={lang === "fr" ? "active" : ""} onClick={() => setLang("fr")}>FR</button>
-              <span className="sep">/</span>
+              <button className={lang === "nl" ? "active" : ""} onClick={() => setLang("nl")}>NL</button>
               <button className={lang === "ar" ? "active" : ""} onClick={() => setLang("ar")}>عربية</button>
-              <span className="sep">/</span>
               <button className={lang === "dr" ? "active" : ""} onClick={() => setLang("dr")}>Darija</button>
             </div>
+          </div>
+          {/* Bas : theme + RDV */}
+          <div className="nav__mobile-foot-row">
             <button
-              className={`nav__theme-toggle${theme === "paper" ? " is-light" : ""}`}
+              className={`nav__theme-toggle nav__theme-toggle--sm${theme === "paper" ? " is-light" : ""}`}
               onClick={onThemeToggle}
               aria-label={theme === "ink" ? "Mode jour" : "Mode nuit"}
             >
@@ -132,8 +138,8 @@ function Nav({ t, lang, setLang, theme, onThemeToggle, onRdv }) {
               <span className="nav__theme-track"><span className="nav__theme-thumb"></span></span>
               <span className="nav__theme-icon nav__theme-icon--sun">☀</span>
             </button>
+            <button className="nav__cta" onClick={() => { close(); onRdv(); }}>{t.nav.rdv} ↗</button>
           </div>
-          <button className="nav__cta" onClick={() => { close(); onRdv(); }}>{t.nav.rdv} ↗</button>
         </div>
       </div>
     </>

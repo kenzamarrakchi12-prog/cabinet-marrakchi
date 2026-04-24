@@ -125,6 +125,8 @@ function App() {
 
       <BeforeAfter t={t} items={DATA.beforeAfter} />
 
+      <InteriorSection t={t} projects={allProjects} lang={lang} />
+
       <MarketSection t={t} />
 
       <MRESection t={t} />
