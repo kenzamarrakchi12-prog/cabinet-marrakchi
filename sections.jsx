@@ -78,7 +78,6 @@ function Nav({ t, lang, setLang, theme, onThemeToggle, onRdv }) {
           <a href="#interieur-studio">{t.nav.interieur}</a>
           <a href="#investir">{t.nav.investir}</a>
           <a href="#mre">{t.nav.mre}</a>
-          <a href="#agence">{t.nav.about}</a>
         </div>
         <div className="nav__right">
           <div className="nav__lang">
@@ -116,7 +115,6 @@ function Nav({ t, lang, setLang, theme, onThemeToggle, onRdv }) {
           <a href="#interieur-studio" onClick={close}>{t.nav.interieur}</a>
           <a href="#investir"        onClick={close}>{t.nav.investir}</a>
           <a href="#mre"             onClick={close}>{t.nav.mre}</a>
-          <a href="#agence"          onClick={close}>{t.nav.about}</a>
         </div>
         <div className="nav__mobile-foot">
           {/* Langue — bien visible */}
