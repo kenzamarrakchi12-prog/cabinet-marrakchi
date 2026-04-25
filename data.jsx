@@ -136,8 +136,8 @@ window.__I18N__ = {
   /* ============================================================ FRANÇAIS */
   fr: {
     nav: {
-      work: "Projets", expertises: "Expertises", investir: "Investir à Tanger",
-      mre: "MRE", about: "Agence", contact: "Contact", rdv: "Prendre RDV"
+      work: "Projets", expertises: "Expertises", interieur: "Intérieur",
+      investir: "Investir à Tanger", mre: "MRE", about: "Agence", contact: "Contact", rdv: "Prendre RDV"
     },
     hero: {
       eyebrow: "MK Architects · D.P.L.G. · Tanger, Maroc · Depuis 1998",
@@ -430,7 +430,7 @@ window.__I18N__ = {
 
   /* ============================================================ ARABE */
   ar: {
-    nav: { work: "المشاريع", expertises: "خدماتنا", investir: "الاستثمار بطنجة", mre: "المغاربة في الخارج", about: "المكتب", contact: "اتصال", rdv: "حجز موعد" },
+    nav: { work: "المشاريع", expertises: "خدماتنا", interieur: "تصميم داخلي", investir: "الاستثمار بطنجة", mre: "المغاربة في الخارج", about: "المكتب", contact: "اتصال", rdv: "حجز موعد" },
     hero: {
       eyebrow: "MK Architects · دبلوم دولة · طنجة",
       title_l1: "شريككم في",
@@ -683,7 +683,7 @@ window.__I18N__ = {
 
   /* ============================================================ DARIJA */
   dr: {
-    nav: { work: "Lkhdma", expertises: "Khadamat", investir: "Lstithmar f Tanja", mre: "MRE", about: "Lmakatib", contact: "Contact", rdv: "Akhd Mawed" },
+    nav: { work: "Lkhdma", expertises: "Khadamat", interieur: "Dakhli", investir: "Lstithmar f Tanja", mre: "MRE", about: "Lmakatib", contact: "Contact", rdv: "Akhd Mawed" },
     hero: {
       eyebrow: "MK Architects — Mohandes M3mari — Tanja — Mn 1998",
       title_l1: "Sharik dyalek",
@@ -921,8 +921,8 @@ window.__I18N__ = {
   /* ============================================================ NEDERLANDS */
   nl: {
     nav: {
-      work: "Projecten", expertises: "Expertises", investir: "Investeren in Tanger",
-      mre: "Nederlanders & Belgen", about: "Bureau", contact: "Contact", rdv: "Afspraak"
+      work: "Projecten", expertises: "Expertises", interieur: "Interieur",
+      investir: "Investeren in Tanger", mre: "Nederlanders & Belgen", about: "Bureau", contact: "Contact", rdv: "Afspraak"
     },
     hero: {
       eyebrow: "MK Architects · D.P.L.G. · Tanger, Marokko · Sinds 1998",

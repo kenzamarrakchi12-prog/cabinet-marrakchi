@@ -75,6 +75,7 @@ function Nav({ t, lang, setLang, theme, onThemeToggle, onRdv }) {
         <div className="nav__links">
           <a href="#projets">{t.nav.work}</a>
           <a href="#expertises">{t.nav.expertises}</a>
+          <a href="#interieur-studio">{t.nav.interieur}</a>
           <a href="#investir">{t.nav.investir}</a>
           <a href="#mre">{t.nav.mre}</a>
           <a href="#agence">{t.nav.about}</a>
@@ -110,11 +111,12 @@ function Nav({ t, lang, setLang, theme, onThemeToggle, onRdv }) {
       {/* ── Menu mobile overlay ── */}
       <div className={`nav__mobile${menuOpen ? " is-open" : ""}`} aria-hidden={!menuOpen}>
         <div className="nav__mobile-links">
-          <a href="#projets"   onClick={close}>{t.nav.work}</a>
-          <a href="#expertises" onClick={close}>{t.nav.expertises}</a>
-          <a href="#investir"  onClick={close}>{t.nav.investir}</a>
-          <a href="#mre"       onClick={close}>{t.nav.mre}</a>
-          <a href="#agence"    onClick={close}>{t.nav.about}</a>
+          <a href="#projets"         onClick={close}>{t.nav.work}</a>
+          <a href="#expertises"      onClick={close}>{t.nav.expertises}</a>
+          <a href="#interieur-studio" onClick={close}>{t.nav.interieur}</a>
+          <a href="#investir"        onClick={close}>{t.nav.investir}</a>
+          <a href="#mre"             onClick={close}>{t.nav.mre}</a>
+          <a href="#agence"          onClick={close}>{t.nav.about}</a>
         </div>
         <div className="nav__mobile-foot">
           {/* Langue — bien visible */}
