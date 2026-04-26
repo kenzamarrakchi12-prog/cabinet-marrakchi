@@ -36,7 +36,7 @@ function Gallery({ t, projects, lang, layout = "masonry" }) {
   }, [lightbox]);
 
   return (
-    <section className="gallery container" ref={ref} data-screen-label="Galerie">
+    <section className="gallery container" id="portfolio" ref={ref} data-screen-label="Galerie">
       <div className="gallery__head">
         <h2 className="reveal" style={{ fontFamily: "var(--f-display)", fontWeight: 300, fontSize: "clamp(44px, 6vw, 96px)", letterSpacing: "-0.03em", lineHeight: 0.95, maxWidth: "14ch" }}>
           {t.gallery.title_1} <i className="it">{t.gallery.title_2}</i>

@@ -136,7 +136,7 @@ window.__I18N__ = {
   /* ============================================================ FRANÇAIS */
   fr: {
     nav: {
-      work: "Projets", expertises: "Expertises", interieur: "Intérieur",
+      work: "Projets", expertises: "Expertises", interieur: "Intérieur", portfolio: "Portfolio",
       investir: "Investir à Tanger", mre: "MRE", about: "Agence", contact: "Contact", rdv: "Prendre RDV"
     },
     hero: {
@@ -430,7 +430,7 @@ window.__I18N__ = {
 
   /* ============================================================ ARABE */
   ar: {
-    nav: { work: "المشاريع", expertises: "خدماتنا", interieur: "تصميم داخلي", investir: "الاستثمار بطنجة", mre: "المغاربة في الخارج", about: "المكتب", contact: "اتصال", rdv: "حجز موعد" },
+    nav: { work: "المشاريع", expertises: "خدماتنا", interieur: "تصميم داخلي", portfolio: "Portfolio", investir: "الاستثمار بطنجة", mre: "المغاربة في الخارج", about: "المكتب", contact: "اتصال", rdv: "حجز موعد" },
     hero: {
       eyebrow: "MK Architects · دبلوم دولة · طنجة",
       title_l1: "شريككم في",
@@ -683,7 +683,7 @@ window.__I18N__ = {
 
   /* ============================================================ DARIJA */
   dr: {
-    nav: { work: "Lkhdma", expertises: "Khadamat", interieur: "Dakhli", investir: "Lstithmar f Tanja", mre: "MRE", about: "Lmakatib", contact: "Contact", rdv: "Akhd Mawed" },
+    nav: { work: "Lkhdma", expertises: "Khadamat", interieur: "Dakhli", portfolio: "Portfolio", investir: "Lstithmar f Tanja", mre: "MRE", about: "Lmakatib", contact: "Contact", rdv: "Akhd Mawed" },
     hero: {
       eyebrow: "MK Architects — Mohandes M3mari — Tanja — Mn 1998",
       title_l1: "Sharik dyalek",
@@ -921,7 +921,7 @@ window.__I18N__ = {
   /* ============================================================ NEDERLANDS */
   nl: {
     nav: {
-      work: "Projecten", expertises: "Expertises", interieur: "Interieur",
+      work: "Projecten", expertises: "Expertises", interieur: "Interieur", portfolio: "Portfolio",
       investir: "Investeren in Tanger", mre: "Nederlanders & Belgen", about: "Bureau", contact: "Contact", rdv: "Afspraak"
     },
     hero: {

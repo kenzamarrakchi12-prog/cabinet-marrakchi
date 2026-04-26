@@ -188,6 +188,33 @@ a { color: inherit; text-decoration: none; }
 .nav__lang button:hover { opacity: 1; }
 .nav__lang .sep { opacity: 0.3; }
 
+/* ── Dropdown langue ── */
+.nav__lang-drop { position: relative; }
+.nav__lang-trigger {
+  display: flex; align-items: center; gap: 5px;
+  font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  opacity: 0.7; transition: opacity 200ms;
+  padding: 5px 8px; border: 1px solid var(--line); border-radius: 2px;
+}
+.nav__lang-trigger:hover { opacity: 1; }
+.nav__lang-arrow { font-size: 9px; transition: transform 200ms; display: inline-block; }
+.nav__lang-arrow.open { transform: rotate(180deg); }
+.nav__lang-menu {
+  position: absolute; top: calc(100% + 8px); right: 0;
+  background: var(--bg); border: 1px solid var(--line);
+  min-width: 110px; z-index: 200;
+  display: flex; flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+.nav__lang-menu button {
+  font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 10px 14px; text-align: left; opacity: 0.6; transition: opacity 150ms, background 150ms;
+  border-bottom: 1px solid var(--line);
+}
+.nav__lang-menu button:last-child { border-bottom: none; }
+.nav__lang-menu button:hover { opacity: 1; background: var(--ink-mute); }
+.nav__lang-menu button.active { opacity: 1; color: var(--accent); }
+
 /* ── Theme toggle switch ── */
 .nav__theme-toggle {
   display: flex;
@@ -339,9 +366,9 @@ a { color: inherit; text-decoration: none; }
   .nav__theme-toggle:not(.nav__theme-toggle--sm) { display: none; }
 }
 [data-theme="paper"] .nav { background: rgba(243,241,234,0.96); color: var(--ink); }
-/* Langue dans la nav principale : afficher jusqu'à 560px mais gérer l'espace */
+/* Dropdown langue : masqué sur mobile (géré dans le hamburger) */
 @media (max-width: 700px) {
-  .nav__lang { display: none; }
+  .nav__lang-drop { display: none; }
 }
 
 /* ------------ Hero ------------ */

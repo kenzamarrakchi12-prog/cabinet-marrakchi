@@ -38,9 +38,13 @@ function useReveal() {
 }
 
 /* ---------- Navigation ---------- */
+const LANG_LABELS = { fr: "FR", nl: "NL", ar: "عربية", dr: "Darija" };
+
 function Nav({ t, lang, setLang, theme, onThemeToggle, onRdv }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const langRef = useRef(null);
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 60);
@@ -62,6 +66,14 @@ function Nav({ t, lang, setLang, theme, onThemeToggle, onRdv }) {
     return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
 
+  // Ferme le dropdown langue si clic en dehors
+  useEffect(() => {
+    if (!langOpen) return;
+    const handler = (e) => { if (langRef.current && !langRef.current.contains(e.target)) setLangOpen(false); };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, [langOpen]);
+
   const close = () => setMenuOpen(false);
 
   return (
@@ -75,18 +87,28 @@ function Nav({ t, lang, setLang, theme, onThemeToggle, onRdv }) {
           <a href="#projets">{t.nav.work}</a>
           <a href="#expertises">{t.nav.expertises}</a>
           <a href="#interieur-studio">{t.nav.interieur}</a>
+          <a href="#portfolio">{t.nav.portfolio}</a>
           <a href="#investir">{t.nav.investir}</a>
           <a href="#mre">{t.nav.mre}</a>
         </div>
         <div className="nav__right">
-          <div className="nav__lang">
-            <button className={lang === "fr" ? "active" : ""} onClick={() => setLang("fr")}>FR</button>
-            <span className="sep">/</span>
-            <button className={lang === "nl" ? "active" : ""} onClick={() => setLang("nl")}>NL</button>
-            <span className="sep">/</span>
-            <button className={lang === "ar" ? "active" : ""} onClick={() => setLang("ar")}>عربية</button>
-            <span className="sep">/</span>
-            <button className={lang === "dr" ? "active" : ""} onClick={() => setLang("dr")}>Darija</button>
+          {/* Dropdown langue */}
+          <div className="nav__lang-drop" ref={langRef}>
+            <button className="nav__lang-trigger" onClick={() => setLangOpen(!langOpen)}>
+              <span>{LANG_LABELS[lang]}</span>
+              <span className={`nav__lang-arrow${langOpen ? " open" : ""}`}>▾</span>
+            </button>
+            {langOpen && (
+              <div className="nav__lang-menu">
+                {Object.entries(LANG_LABELS).map(([k, label]) => (
+                  <button
+                    key={k}
+                    className={lang === k ? "active" : ""}
+                    onClick={() => { setLang(k); setLangOpen(false); }}
+                  >{label}</button>
+                ))}
+              </div>
+            )}
           </div>
           {/* Theme toggle */}
           <button
