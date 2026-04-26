@@ -70,7 +70,6 @@ function Nav({ t, lang, setLang, theme, onThemeToggle, onRdv }) {
         <div className="nav__brand">
           <span className="dot"></span>
           <span><span className="mk-blue">MK</span> Architects</span>
-          <span className="nav__brand-city" style={{ opacity: 0.55 }}>— Tanger</span>
         </div>
         <div className="nav__links">
           <a href="#projets">{t.nav.work}</a>
