@@ -239,11 +239,11 @@ function HeroCinematic({ t, images, heroStyle }) {
             <span className="ln"><span>{t.hero.title_l2}</span></span>
             <span className="ln"><span>{t.hero.title_l3} <i className="it mk-blue">{t.hero.title_l4}</i></span></span>
           </h1>
-          <ul className="hero__sub">
+          <div className="hero__pills">
             {t.hero.sub.split(". ").filter(Boolean).map((item, i) => (
-              <li key={i}>{item.replace(/\.$/, "")}</li>
+              <div key={i} className="hero__pill">{item.replace(/\.$/, "")}</div>
             ))}
-          </ul>
+          </div>
           <p className="hero__tagline">{t.hero.tagline}</p>
         </div>
 
